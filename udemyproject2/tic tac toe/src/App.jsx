@@ -31,7 +31,7 @@ function deriveGameBoard(gameTurns) {
   let gameBoard = [...initial_Game_Board.map((array) => [...array])];
 
   for (const turn of gameTurns) {
-    const { square, player } = turn;
+    const { square, player } = turn; 
     const { row, col } = square;
 
     gameBoard[row][col] = player;
